@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ScouterNoticeWebApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("SERVER_PORT", "6181");
 		SpringApplication.run(ScouterNoticeWebApplication.class, args);
 	}
 }
