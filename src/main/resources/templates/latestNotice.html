@@ -57,26 +57,21 @@
 <body>
 <div class="main-box">
     <h1>▶︎ 28 Mar. 2017</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v0.5.0" target="_blank">v0.5.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v0.5.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v0.5.0</a></h4>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v0.5.1" target="_blank">v0.5.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v0.5.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v0.5.1</a></h4>
     <h3>Features</h3>
     <ul class="nt">
-        <li>Support @XXXMapging RequestHandle annotation</li>
-        <li>Support async servlet</li>
-        <li>Support spring RestTemplate and AsyncRestTemplate</li>
-        <li>Trace multithreaded transaction</li>
-        <li>Restore XLog column's width and order</li>
-        <li>add another option '3:Header' to trace_user_mode values</li>
-        <li>Add scouter notice</li>
+        <li>v0.5.1 is Hot fix release</li>
 
     </ul>
     <h3>Change Note</h3>
     <ul class="nt">
-        <li>Chagne mac client workspace ( userhome/.scouter )</li>
+        <li>Scouter client : STDOUT redirect to console view.</li>
     </ul>
     <h3>Bug fix</h3>
     <ul class="nt">
-        <li>When tokenize sql, ignore comment</li>
+        <li>fix the bug that produces blank xlog profile view when method step name has a blank name.</li>
+        <li>change default value of the option 'hook_lambda_instrumentation_strategy_enabled' to false.<br />(It produces `CallSite generation error` on some unknown environment.)</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
