@@ -57,22 +57,21 @@
 <body>
 <div class="main-box">
     <h1>▶︎ 30 Mar. 2017</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v0.5.1" target="_blank">v0.5.1 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v0.5.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v0.5.1</a></h4>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v0.6.0" target="_blank">v0.6.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v0.6.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v0.6.0</a></h4>
     <h3>Features</h3>
     <ul class="nt">
-        <li>v0.5.1 is Hot fix release</li>
+        <li>features for Spring @Controller (Java Agent)</li>
+        <li>new options for scouter repository (Collector)</li>
+        <li>detailed exeption hooking options (Java Agent)</li>
+    </ul>
 
-    </ul>
-    <h3>Change Note</h3>
-    <ul class="nt">
-        <li>Scouter client : STDOUT redirect to console view.</li>
-    </ul>
     <h3>Bug fix</h3>
     <ul class="nt">
-        <li>fix the bug that produces blank xlog profile view when method step name has a blank name.</li>
-        <li>change default value of the option 'hook_lambda_instrumentation_strategy_enabled' to false.<br />(It produces `CallSite generation error` on some unknown environment.)</li>
+        <li>fix the critical exception on applications using mariadb jdbc driver 1.5.6</li>
+        <li>fix datasouce collection logic because of changing the JMX attribute name on Tomcat 8.5</li>
     </ul>
+
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
 
