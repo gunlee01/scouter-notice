@@ -24,7 +24,7 @@ public class NoticeController {
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
         model.addAttribute("testAttr", "test-value2");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20170608-01".getBytes()));
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20170608-02".getBytes()));
         return "latestNotice";
     }
 
