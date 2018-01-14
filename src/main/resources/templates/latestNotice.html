@@ -56,23 +56,22 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 21 August. 2017</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.0" target="_blank">v1.8.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.0</a></h4>
+    <h1>▶︎ 14 January. 2018</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.1" target="_blank">v1.8.1 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.1</a></h4>
     <h3>Features</h3>
     <ul class="nt">
-        <li>Alert script is editable in a scouter client now.</li>
-        <li>Scouter HTTP(Web) api released.</li>
-        <li>JVM metaspace metrics added</li>
-        <li>support postgresql jdbc driver v42+</li>
-        <li>scouter client runs on java 9.</li>
+        <li>additional HTTP(Web) api</li>
+        <li>counter web chart widget</li>
+        <li>configurable alert level for inactive & reactive object</li>
+        <li>support mariadb jdbc driver v1.6.x & v1.7.x</li>
     </ul>
 
     <h3>Bug fix</h3>
     <ul class="nt">
-        <li>[client] fix client hangs when some requests to server are failed.</li>
-        <li>[client] can set time range to 24:00:00 in load time view</li>
-        <li>[server] fix that alert script loader can't reload alert script configurations in runtime.</li>
+        <li>[webapp] fix that the summary api of apiCall-by-objHash does not get any data.</li>
+        <li>[client] fix that the XLog view does not release some memory after closing.</li>
+        <li>[agent.java] fix incorrect exception summary gathering</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
