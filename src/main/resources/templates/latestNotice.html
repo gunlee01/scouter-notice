@@ -56,22 +56,21 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 14 January. 2018</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.1" target="_blank">v1.8.1 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.1</a></h4>
+    <h1>▶︎ 25 Feb. 2018</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.2" target="_blank">v1.8.2 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.2" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.2</a></h4>
     <h3>Features</h3>
     <ul class="nt">
-        <li>additional HTTP(Web) api</li>
-        <li>counter web chart widget</li>
-        <li>configurable alert level for inactive & reactive object</li>
-        <li>support mariadb jdbc driver v1.6.x & v1.7.x</li>
+        <li>[server] can store arbitary key-value data on it's own k/v store.</li>
+        <li>[webapp] New HTTP(Web) api - key value store, authorization</li>
+        <li>[agent.java] add scouter cookie publishing path option.(default : /)</li>
+        <li>[agent.java] trace reqeust context over a hystrix thread.</li>
     </ul>
 
     <h3>Bug fix</h3>
     <ul class="nt">
-        <li>[webapp] fix that the summary api of apiCall-by-objHash does not get any data.</li>
-        <li>[client] fix that the XLog view does not release some memory after closing.</li>
-        <li>[agent.java] fix incorrect exception summary gathering</li>
+        <li>[webapp] fix abnormal processing when the uri for widget chart includes some unicode character.</li>
+        <li>[agent.java] correct missing setting XLog property values - text1 ~ text5 in the case of Non-http service tracing.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>

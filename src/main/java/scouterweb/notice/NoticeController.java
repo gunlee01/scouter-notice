@@ -23,8 +23,8 @@ public class NoticeController {
 //            String name = headerNames.nextElement();
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
-        model.addAttribute("testAttr", "test-value8");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180114-01".getBytes()));
+        model.addAttribute("testAttr", "test-value9");
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180225-01".getBytes()));
         return "latestNotice";
     }
 
@@ -35,8 +35,8 @@ public class NoticeController {
 //            String name = headerNames.nextElement();
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
-        model.addAttribute("testAttr", "test-value");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180114-01".getBytes()));
+        model.addAttribute("testAttr", "test-value9");
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180225-01".getBytes()));
         return "latestNotice2";
     }
 }
