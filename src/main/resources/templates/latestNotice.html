@@ -56,21 +56,23 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 01 Mar. 2018</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.3" target="_blank">v1.8.3 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.3" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.3</a></h4>
+    <h1>▶︎ 03 Apr. 2018</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.4" target="_blank">v1.8.4 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.4" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.4</a></h4>
     <h3>Features</h3>
     <ul class="nt">
-        <li>[server] key-value storage for user defined data.</li>
-        <li>[webapp] New HTTP(Web) api - setting/getting key value data API, authorization API</li>
-        <li>[agent.java] add scouter cookie publishing path option.(default : /)</li>
-        <li>[agent.java] trace reqeust context over a hystrix thread.</li>
+        <li>[agent.java] support tracing about redis call by spring data redis & jedis.</li>
+        <li>[agent.java] additional performance metric supported - sql time by service, api call time by service & heap total memory.</li>
+        <li>[client] filterable xlogs by start time.</li>
+        <li>[webapp] xlog api added - get xlogs by bulk by txids.</li>
     </ul>
 
     <h3>Bug fix</h3>
     <ul class="nt">
-        <li>[webapp] fix abnormal processing when the uri for widget chart includes some unicode character.</li>
-        <li>[agent.java] correct missing setting XLog property values - text1 ~ text5 in the case of Non-http service tracing.</li>
+        <li>[webapp] fixed what the prefilght AJAX requests can't be processed correctly.</li>
+        <li>[webapp] fixed what the error is thrown when the same key is stored repeatly.</li>
+        <li>[client] fixed what the windows client export function makes broken export file.</li>
+        <li>[server] clear sometimes the server can not clean up old log files.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>

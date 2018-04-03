@@ -23,8 +23,8 @@ public class NoticeController {
 //            String name = headerNames.nextElement();
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
-        model.addAttribute("testAttr", "test-value11");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180301-01".getBytes()));
+        model.addAttribute("testAttr", "test-value12");
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180403-01".getBytes()));
         return "latestNotice";
     }
 
