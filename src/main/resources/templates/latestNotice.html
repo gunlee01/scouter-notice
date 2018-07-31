@@ -57,20 +57,23 @@
 <body>
 <div class="main-box">
     <h1>▶︎ 13 May. 2018</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.6" target="_blank">v1.8.6 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.8.6" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.8.6</a></h4>
-    <h3>v1.8.6 Features</h3>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.9.0" target="_blank">v1.9.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.9.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.9.0</a></h4>
+    <h3>v1.9.0 Features</h3>
     <ul class="nt">
-        <li>[webapp] added gzip output option, net_http_api_gzip_enabled(default true).</li>
-        <li>[webapp] added url shortening api and redirection page.</li>
-        <li>[server&client] All charts have an outgoing link context menu to open it(the time range and objects) on a 3rd-party UI.</li>
-        <li>[server] added alert scripting helper methods. - httpGet() for call any webhook.</li>
+        <li>[agent.java] Supports java 9 and java 10 based applications.</li>
+        <li>[agent.java] Connection profiling for hikari pool has been added.</li>
+        <li>[agent.java] Asynchronous Thread linkage tracking for Spring 5's @async annotation is now possible without any configuration.</li>
+
+        <li>[agent.java] Added an option that does not track specific patterns of service at all. Requests subject to this option are not reflected in TPS and response time information. xlog_fully_discard_service_patterns</li>
+        <li>[agent.java] Sql profiling for the Altibase jdbc driver using the ABPreparedStatement class has been added.</li>
+        <li>[webapp] The counter search limit of Web api has been increased from 1 hour to 6 hours.</li>
     </ul>
 
-    <h3>v1.8.6 Bug fix</h3>
+
+    <h3>v1.9.0 Bug fix</h3>
     <ul class="nt">
-        <li>[webapp] fix the bug that counter data is missing when the midnight(00:00) is include in the range condition.</li>
-        <li>[webapp] fix the bug that counter stat data is missing when the retrieving range is over a day.</li>
+        <li></li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
