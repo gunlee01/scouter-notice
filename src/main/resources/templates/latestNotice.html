@@ -56,24 +56,23 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 13 May. 2018</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v1.9.0" target="_blank">v1.9.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v1.9.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v1.9.0</a></h4>
-    <h3>v1.9.0 Features</h3>
+    <h1>▶︎ 28 Sep. 2018</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.0.0" target="_blank">v2.0.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.0.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.0.0</a></h4>
+    <h3>v2.0.0 Features</h3>
     <ul class="nt">
-        <li>[agent.java] Supports java 9 and java 10 based applications.</li>
-        <li>[agent.java] Connection profiling for hikari pool has been added.</li>
-        <li>[agent.java] Asynchronous Thread linkage tracking for Spring 5's @async annotation is now possible without any configuration.</li>
-
-        <li>[agent.java] Added an option that does not track specific patterns of service at all. Requests subject to this option are not reflected in TPS and response time information. xlog_fully_discard_service_patterns</li>
-        <li>[agent.java] Sql profiling for the Altibase jdbc driver using the ABPreparedStatement class has been added.</li>
-        <li>[webapp] The counter search limit of Web api has been increased from 1 hour to 6 hours.</li>
+        <li>[server] Telegraf server feature. - The performance information of various software collected through telegraf input can be integrated and monitored by scouter.</li>
+        <li>[webapp] Interaction counter lookup api added.</li>
+        <li>[webapp] Counter model lookup API added.</li>
+        <li>[agent.java] It is now possible to collect interoperable performance metric information called 'Interaction counter'.</li>
+        <li>[agent.java] It is now possible to collect interoperable performance metric information called 'Interaction counter'.</li>
+        <li>[client] The ability to trace SQL statements using the h2 JDBC driver added.</li>
     </ul>
 
-
-    <h3>v1.9.0 Bug fix</h3>
+    <h3>v2.0.0 Bug fix</h3>
     <ul class="nt">
-        <li></li>
+        <li>[agent.java] Fixed a bug where certain requests did not end when the full stack on SQL error option was enabled.</li>
+        <li>[agent.java] Fixed a bug where the '/' character was omitted when parsing SQL literal.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
