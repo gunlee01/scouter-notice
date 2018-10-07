@@ -12,4 +12,22 @@ public class ScouterNoticeWebApplication {
 		System.setProperty("SERVER_PORT", "6181");
 		SpringApplication.run(ScouterNoticeWebApplication.class, args);
 	}
+
+//	@Bean
+//	public ObjectMapper getObjectMapper() {
+//		return new ObjectMapper();
+//	}
+//
+//	@Bean
+//	public MappingJackson2HttpMessageConverter messageConverter() {
+//		MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+//		converter.setObjectMapper(getObjectMapper());
+//		return converter;
+//	}
+//
+//	@Override
+//	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+//		converters.add(messageConverter());
+//		addDefaultHttpMessageConverters(converters);
+//	}
 }
