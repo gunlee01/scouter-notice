@@ -43,7 +43,7 @@ public class NoticeController {
     @GetMapping("/scouter-paper/latest-notice")
     @ResponseBody
     public NoticeResponse getPaperLatestNotice(HttpServletRequest req, HttpServletResponse res) {
-        if (!StringUtils.isEmptyOrWhitespace(req.getHeader("X-Scouter-Notice-Token"))) {
+        if (StringUtils.isEmptyOrWhitespace(req.getHeader("X-Scouter-Notice-Token"))) {
             res.setHeader("X-Scouter-Notice-Token", Long.toHexString(UUID.randomUUID().getMostSignificantBits()));
         }
         String noticeToken = DigestUtils.md5DigestAsHex("scouter-paper-20181007-01".getBytes());
