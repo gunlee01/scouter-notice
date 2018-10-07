@@ -42,7 +42,7 @@ public class NoticeController {
     }
 
     @GetMapping("/scouter-paper/latest-notice")
-    @CrossOrigin
+    @CrossOrigin(exposedHeaders = {"X-Scouter-Notice-Token", "X-Scouter-Notice-ETag"})
     @ResponseBody
     public NoticeResponse getPaperLatestNotice(HttpServletRequest req, HttpServletResponse res) {
         if (StringUtils.isEmptyOrWhitespace(req.getHeader("X-Scouter-Notice-Token"))) {
