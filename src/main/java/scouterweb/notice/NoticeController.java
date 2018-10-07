@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.DigestUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.thymeleaf.util.StringUtils;
@@ -41,6 +42,7 @@ public class NoticeController {
     }
 
     @GetMapping("/scouter-paper/latest-notice")
+    @CrossOrigin
     @ResponseBody
     public NoticeResponse getPaperLatestNotice(HttpServletRequest req, HttpServletResponse res) {
         if (StringUtils.isEmptyOrWhitespace(req.getHeader("X-Scouter-Notice-Token"))) {
