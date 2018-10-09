@@ -45,7 +45,7 @@ public class NoticeController {
     @CrossOrigin(exposedHeaders = {"X-Scouter-Notice-Token", "X-Scouter-Notice-ETag"})
     @ResponseBody
     public NoticeResponse getPaperLatestNotice(HttpServletRequest req, HttpServletResponse res) {
-        if (StringUtils.isEmptyOrWhitespace(req.getHeader("X-Scouter-Notice-Token"))) {
+        if (StringUtils.isEmptyOrWhitespace(req.getHeader("X-SCCH"))) {
             res.setHeader("X-Scouter-Notice-Token", Long.toHexString(UUID.randomUUID().getMostSignificantBits()));
         }
         String noticeToken = DigestUtils.md5DigestAsHex("scouter-paper-20181007-01".getBytes());
