@@ -30,14 +30,14 @@ public class NoticeController {
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
         model.addAttribute("testAttr", "test-value17");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180929-01".getBytes()));
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20181118-01".getBytes()));
         return "latestNotice";
     }
 
     @GetMapping("/latest-notice2")
     public String getLatestNotice2(Model model, HttpServletRequest req, HttpServletResponse res) {
         model.addAttribute("testAttr", "test-value17");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20180929-01".getBytes()));
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20181118-01".getBytes()));
         return "latestNotice2";
     }
 
