@@ -57,23 +57,24 @@
 <body>
 <div class="main-box">
     <h1>▶︎ 18 Nov. 2018</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.5.0" target="_blank">v2.5.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.5.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.5.0</a></h4>
-    <h3>v2.5.0 Features</h3>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.0" target="_blank">v2.6.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.6.0</a></h4>
+    <h3>v2.6.0 Features</h3>
     <ul class="nt">
-        <li>[server] Zipkin storage feature. - You can now use Scouter as Zipkin server storage. The collected spans can be found in the scouter's xlog view.</li>
-        <li>[server] Support java 9, 10, 11.</li>
-        <li>[webapp] Support java 9, 10, 11.</li>
-        <li>[agent.java] Support java 11.</li>
-        <li>[agent.java] Support Reactor Mono, Flux thread tracing.</li>
-        <li>Support Hystrix thread tracing on a spring cloud feign. (Special Thanks to @redutan)</li>
-        <li>Rabbit mq & kafka producer tracing</li>
+        <li>[server] zipkin-scouter co-processing enhancement.</li>
+        <li>[client] improve a telegraf config & configuration view. (scouter-telegraf mapping configuration can be done completely in a scouter client.)</li>
+        <li>[client] support java 11.</li>
+        <li>[client] add response time xlog filter</li>
+        <li>[agent.java] support lettuce 5.x</li>
+        <li>[agent.java] support mysql jdbc driver 8.x</li>
+        <li>[agent.java] add kafka & rabbitmq interaction counter</li>
+        <li>[agent.java] bind variable can be displayed at most 500 length(former max length was 20)</li>
+        <li>[agent.java] separate java agent by java version.(under 8 and others)</li>
     </ul>
 
-    <h3>v2.5.0 Bug fix</h3>
+    <h3>v2.6.0 Bug fix</h3>
     <ul class="nt">
-        <li>[agent.java] fix the active service shows finished service as a zombie services (never finished) with xlog_fully_discard_service options.</li>
-        <li>[agent.java] fix the bug that some xlogs log when the xlog_sampling_only_profile option is enabled.</li>
+        <li>[agent.java] bug fix that 'mgr_purge_profile_keep_days' option doesn't work</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
