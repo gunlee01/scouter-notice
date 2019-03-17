@@ -56,25 +56,22 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 18 Nov. 2018</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.0" target="_blank">v2.6.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.6.0</a></h4>
-    <h3>v2.6.0 Features</h3>
+    <h1>▶︎ 17 Mar. 2019</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.1" target="_blank">v2.6.1 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.6.1</a></h4>
+    <h3>v2.6.1 Features</h3>
     <ul class="nt">
-        <li>[server] zipkin-scouter co-processing enhancement.</li>
-        <li>[client] improve a telegraf config & configuration view. (scouter-telegraf mapping configuration can be done completely in a scouter client.)</li>
-        <li>[client] support java 11.</li>
-        <li>[client] add response time xlog filter</li>
-        <li>[agent.java] support lettuce 5.x</li>
-        <li>[agent.java] support mysql jdbc driver 8.x</li>
-        <li>[agent.java] add kafka & rabbitmq interaction counter</li>
-        <li>[agent.java] bind variable can be displayed at most 500 length(former max length was 20)</li>
-        <li>[agent.java] separate java agent by java version.(under 8 and others)</li>
+        <li>[webapp] CPU & Active service status added on an iteraction counter.</li>
+        <li>[client] additional filter option for the value - "hasDumpYn"</li>
+        <li>[agent.java] support mysql jdbc driver 8.x for resultset tracing</li>
     </ul>
 
-    <h3>v2.6.0 Bug fix</h3>
+    <h3>v2.6.1 Bug fix</h3>
     <ul class="nt">
-        <li>[agent.java] bug fix that 'mgr_purge_profile_keep_days' option doesn't work</li>
+        <li>[server] bug fix that 'mgr_purge_profile_keep_days' option doesn't work.</li>
+        <li>[webapp] fix NPE on retrieving alerts when some objects are not exist.</li>
+        <li>[client] fix a profile view which has broken color's of steps.</li>
+        <li>[agent.java] fixed - can't acquire remote IP sometimes from ip header option - trace_http_client_ip_header_key</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>

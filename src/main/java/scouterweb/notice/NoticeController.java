@@ -29,8 +29,8 @@ public class NoticeController {
 //            String name = headerNames.nextElement();
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
-        model.addAttribute("testAttr", "test-value18");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20190119-01".getBytes()));
+        model.addAttribute("testAttr", "test-value19");
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20190317-01".getBytes()));
         return "latestNotice";
     }
 
@@ -51,7 +51,6 @@ public class NoticeController {
         String noticeToken = DigestUtils.md5DigestAsHex("scouter-paper-20190110-01".getBytes());
         res.setHeader("X-Scouter-Notice-ETag", noticeToken);
 
-        ;
         return new NoticeResponse(noticeToken, Arrays.asList(new PaperNotice("", "", "", "")));
     }
 
