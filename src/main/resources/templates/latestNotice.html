@@ -56,22 +56,27 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 17 Mar. 2019</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.1" target="_blank">v2.6.1 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.6.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.6.1</a></h4>
-    <h3>v2.6.1 Features</h3>
+    <h1>▶︎ 23 Jun. 2019</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.7.0" target="_blank">v2.7.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.7.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.7.0</a></h4>
+    <h3>v2.7.0 Features</h3>
     <ul class="nt">
-        <li>[webapp] CPU & Active service status added on an iteraction counter.</li>
-        <li>[client] additional filter option for the value - "hasDumpYn"</li>
-        <li>[agent.java] support mysql jdbc driver 8.x for resultset tracing</li>
+        <li>[agent.java] support distributed tracing for jdk 11 httpclient.</li>
+        <li>[agent.java] configurable xlog db key index size.</li>
+        <li>[agent.java] mitigate too many hystrix profile steps.</li>
+        <li>[webapp] api for server disk usage.</li>
+        <li>[webapp] api for remove inactive object.</li>
+        <li>[webapp] api for thread list, dump, heap histo, env, socket status.</li>
     </ul>
 
-    <h3>v2.6.1 Bug fix</h3>
+    <h3>v2.7.0 MISC</h3>
     <ul class="nt">
-        <li>[server] bug fix that 'mgr_purge_profile_keep_days' option doesn't work.</li>
-        <li>[webapp] fix NPE on retrieving alerts when some objects are not exist.</li>
-        <li>[client] fix a profile view which has broken color's of steps.</li>
-        <li>[agent.java] fixed - can't acquire remote IP sometimes from ip header option - trace_http_client_ip_header_key</li>
+        <li>[webapp] some security patches</li>
+    </ul>
+
+    <h3>v2.7.0 Bug fix</h3>
+    <ul class="nt">
+        <li></li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
