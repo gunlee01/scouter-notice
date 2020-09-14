@@ -56,27 +56,33 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 15 May. 2020</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.8.1" target="_blank">v2.8.1 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.8.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.8.1</a></h4>
-    <h3>v2.8.1 Features</h3>
+    <h1>▶︎ 14 Sep. 2020</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.0" target="_blank">v2.10.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.10.0</a></h4>
+    <h3>v2.10.0 Features</h3>
     <ul class="nt">
-        <li>[collector] more deilcate adjustable database purging options for removal daily text(dictionary) data, real time counter, visitor counter, tag counter files.</li>
-        <li>[agent.java] xlog sampling judgement follows commencement service's. If the commencement service isn't discarded by sampling rate, the following children services are also not discarded.</li>
-        <li>[agent.java] privide more xlog pattened-sampling configurations.(max 5 types of pattern-set. previous versions provide just one.)</li>
-        <li>[agent.java] add profileSize(Bytes) value onto an XLog property and also into client's filter option. </li>
-        <li>[agent.java] improve profile delivering method. </li>
-        <li>[webapp] add option net_webapp_tcp_client_so_timeout for SO timeout for webapi server connection to collector server.</li>
+        <li>[collector] some bugs are fixed.</li>
+        <li>[agent.java] support HikariDataSource metric on tomcat & spring boot. (thx for @ms29seo )</li>
+        <li>[agent.java] support java 14</li>
+        <li>[agent.java] add traceability of webflux</li>
+        <li>[agent.java] add traceability of webflux in kotlin coroutine</li>
+        <li>[agent.java] add reactor specific active service list & live stack trace</li>
+        <li>[agent.java] add traceability of WebClient</li>
+        <li>[agent.java] add traceability of ElasticSearch query</li>
+        <li>[agent.java] add traceability of MongoDB query (defaut false, hook_mongodb_enabled = false)</li>
+        <li>[agent.java] add option - xlog_sampling_exclude_patterns</li>
+        <li>[agent.java] add option - xlog_consequent_sampling_ignore_patterns</li>
     </ul>
 
-    <h3>v2.8.1 MISC</h3>
+    <h3>v2.10.0 MISC</h3>
     <ul class="nt">
-        <li>[agent.java] jmx counter option set to default false.</li>
+        <li>[agent.java] remove dependency on bytebuddy for experimental feature</li>
     </ul>
 
-    <h3>v2.8.1 Bug fix</h3>
+    <h3>v2.10.0 Bug fix</h3>
     <ul class="nt">
-        <li>[agent.java] fix that it can not be trace async executors on some Jvms.</li>
+        <li>[collector] fix that some summary data doesn't purged.</li>
+        <li>[collector] fix that some discarded garbage profile data remains in a storage.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>

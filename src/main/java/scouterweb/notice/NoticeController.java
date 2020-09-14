@@ -29,15 +29,15 @@ public class NoticeController {
 //            String name = headerNames.nextElement();
 //            log.info("header : {} -> {}", name, req.getHeader(name));
 //        }
-        model.addAttribute("testAttr", "test-value21");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20200515-01".getBytes()));
+        model.addAttribute("testAttr", "test-value22");
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20200914-01".getBytes()));
         return "latestNotice";
     }
 
     @GetMapping("/latest-notice2")
     public String getLatestNotice2(Model model, HttpServletRequest req, HttpServletResponse res) {
-        model.addAttribute("testAttr", "test-value21");
-        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20200515-01".getBytes()));
+        model.addAttribute("testAttr", "test-value22");
+        res.setHeader("X-Scouter-ETag", DigestUtils.md5DigestAsHex("-scouter-20200914-01".getBytes()));
         return "latestNotice2";
     }
 
@@ -48,7 +48,7 @@ public class NoticeController {
         if (StringUtils.isEmptyOrWhitespace(req.getHeader("X-SCCH"))) {
             res.setHeader("X-Scouter-Notice-Token", Long.toHexString(UUID.randomUUID().getMostSignificantBits()));
         }
-        String noticeToken = DigestUtils.md5DigestAsHex("scouter-paper-20190110-01".getBytes());
+        String noticeToken = DigestUtils.md5DigestAsHex("scouter-paper-20200914-01".getBytes());
         res.setHeader("X-Scouter-Notice-ETag", noticeToken);
 
         return new NoticeResponse(noticeToken, Arrays.asList(new PaperNotice("", "", "", "")));
