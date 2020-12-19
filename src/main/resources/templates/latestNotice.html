@@ -57,32 +57,19 @@
 <body>
 <div class="main-box">
     <h1>▶︎ 14 Sep. 2020</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.0" target="_blank">v2.10.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.10.0</a></h4>
-    <h3>v2.10.0 Features</h3>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.2" target="_blank">v2.10.2 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.2" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.10.2</a></h4>
+    <h3>v2.10.2 Features</h3>
     <ul class="nt">
-        <li>[collector] some bugs are fixed.</li>
-        <li>[agent.java] support HikariDataSource metric on tomcat & spring boot. (thx for @ms29seo )</li>
-        <li>[agent.java] support java 14</li>
-        <li>[agent.java] add traceability of webflux</li>
-        <li>[agent.java] add traceability of webflux in kotlin coroutine</li>
-        <li>[agent.java] add reactor specific active service list & live stack trace</li>
-        <li>[agent.java] add traceability of WebClient</li>
-        <li>[agent.java] add traceability of ElasticSearch query</li>
-        <li>[agent.java] add traceability of MongoDB query (defaut false, hook_mongodb_enabled = false)</li>
-        <li>[agent.java] add option - xlog_sampling_exclude_patterns</li>
-        <li>[agent.java] add option - xlog_consequent_sampling_ignore_patterns</li>
+        <li>[agent.java] fix some webflux filter is separated from controller in xlogs.</li>
+        <li>[agent.java] more enhancement of reactor checkpoint profiling.</li>
+        <li>[agent.java] anonymous class hook option added</li>
     </ul>
 
-    <h3>v2.10.0 MISC</h3>
+    <h3>v2.10.2 Bug fix</h3>
     <ul class="nt">
-        <li>[agent.java] remove dependency on bytebuddy for experimental feature</li>
-    </ul>
-
-    <h3>v2.10.0 Bug fix</h3>
-    <ul class="nt">
-        <li>[collector] fix that some summary data doesn't purged.</li>
-        <li>[collector] fix that some discarded garbage profile data remains in a storage.</li>
+        <li>[agent.java] fix NPE on b3 propagaton by @kw-wi</li>
+        <li>[agent.java] fix the elastic search profiling bug when the option profile_elasticsearch_full_query_enabled is true.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
