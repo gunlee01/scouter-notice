@@ -57,19 +57,23 @@
 <body>
 <div class="main-box">
     <h1>▶︎ 19 Dec. 2020</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.2" target="_blank">v2.10.2 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.10.2" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.10.2</a></h4>
-    <h3>v2.10.2 Features</h3>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.15.0" target="_blank">v2.15.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.15.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.15.0</a></h4>
+    <h3>v2.15.0 Features</h3>
     <ul class="nt">
-        <li>[agent.java] fix some webflux filter is separated from controller in xlogs.</li>
-        <li>[agent.java] more enhancement of reactor checkpoint profiling.</li>
-        <li>[agent.java] anonymous class hook option added</li>
+        <li>[agent.java] support java 17.</li>
+        <li>[agent.java] prepared statement parameter visiblity fix.</li>
+        <li>[agent.java] XLog handling performance improvement</li>
+        <li>[collector] support go lang agent.</li>
+        <li>[collector] support Cubrid(DBMS) agent.(by hwany7seo)</li>
+        <li>[client] support Mac OSX Big Sur (by zbum)</li>
+        <li>[client] support go lang agent.</li>
+        <li>[client] support Cubrid(DBMS) agent.(by hwany7seo)</li>
     </ul>
 
-    <h3>v2.10.2 Bug fix</h3>
+    <h3>v2.15.0 Bug fix</h3>
     <ul class="nt">
-        <li>[agent.java] fix NPE on b3 propagaton by @kw-wi</li>
-        <li>[agent.java] fix the elastic search profiling bug when the option profile_elasticsearch_full_query_enabled is true.</li>
+        <li>[client] fix that unable to export xlog profile in Windows.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
