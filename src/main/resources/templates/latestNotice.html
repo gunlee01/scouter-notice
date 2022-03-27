@@ -56,24 +56,24 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 19 Dec. 2020</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.15.0" target="_blank">v2.15.0 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.15.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.15.0</a></h4>
-    <h3>v2.15.0 Features</h3>
+    <h1>▶︎ 3 Mar. 2022</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.17.1" target="_blank">v2.17.1 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.17.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.17.1</a></h4>
+    <h3>v2.17.1 Features</h3>
     <ul class="nt">
-        <li>[agent.java] support java 17.</li>
-        <li>[agent.java] prepared statement parameter visiblity fix.</li>
-        <li>[agent.java] XLog handling performance improvement</li>
-        <li>[collector] support go lang agent.</li>
-        <li>[collector] support Cubrid(DBMS) agent.(by hwany7seo)</li>
-        <li>[client] support Mac OSX Big Sur (by zbum)</li>
-        <li>[client] support go lang agent.</li>
-        <li>[client] support Cubrid(DBMS) agent.(by hwany7seo)</li>
+        <li>[weaver] add scouter weaver feature for direct access scouter xlog on your code.</li>
+        <li>[agent.java] add stuck service profile stop option.</li>
+        <li>[agent.java] Only when the trace_propagete_b3_header option is true, the b3 header is used to determine gxid and txid.</li>
+        <li>[agent.host&java] new feature of host object name convesion for kubernetes pods.</li>
+        <li>[client] support Mac OSX Monterey</li>
+        <li>[client] add socks5 settings on login popup.</li>
+        <li>[client] [cubrid] When multiple objects are connected, unable to display information in viewer for CUBRID.</li>
+        <li>[client] [cubrid] added autoscroll on table and deleted unused sort function.</li>
     </ul>
 
-    <h3>v2.15.0 Bug fix</h3>
+    <h3>v2.17.1 Bug fix</h3>
     <ul class="nt">
-        <li>[client] fix that unable to export xlog profile in Windows.</li>
+        <li>[agent.java] webflux support bug fix. (fix unfinished xlog on some jvm environment.</li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
