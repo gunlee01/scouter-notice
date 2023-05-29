@@ -56,24 +56,27 @@
 </head>
 <body>
 <div class="main-box">
-    <h1>▶︎ 3 Mar. 2022</h1>
-    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.17.1" target="_blank">v2.17.1 Release</a></h2>
-    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.17.1" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.17.1</a></h4>
-    <h3>v2.17.1 Features</h3>
+    <h1>▶︎ 29 May. 2023</h1>
+    <h2><a href="https://github.com/scouter-project/scouter/releases/tag/v2.20.0" target="_blank">v2.20.0 Release</a></h2>
+    <h4>Release URL : <a href="https://github.com/scouter-project/scouter/releases/tag/v2.20.0" target="_blank">https://github.com/scouter-project/scouter/releases/tag/v2.20.0</a></h4>
+    <h3>v2.20.0 Features</h3>
     <ul class="nt">
-        <li>[weaver] add scouter weaver feature for direct access scouter xlog on your code.</li>
-        <li>[agent.java] add stuck service profile stop option.</li>
-        <li>[agent.java] Only when the trace_propagete_b3_header option is true, the b3 header is used to determine gxid and txid.</li>
-        <li>[agent.host&java] new feature of host object name convesion for kubernetes pods.</li>
-        <li>[client] support Mac OSX Monterey</li>
-        <li>[client] add socks5 settings on login popup.</li>
-        <li>[client] [cubrid] When multiple objects are connected, unable to display information in viewer for CUBRID.</li>
-        <li>[client] [cubrid] added autoscroll on table and deleted unused sort function.</li>
+        <li>[agent.java] Support java 20.</li>
+        <li>[agent.java] Support virtual threads and include all or partial virtual thread information in thead dump.</li>
+        <li>[agent.java] Support jakarta servlet. (thx. zbum)</li>
+        <li>[agent.java] The lowest supported version has been changed to java 8.</li>
+        <li>[agent.java] Support tracing for redisson.</li>
+        <li>[agent.java] enable or disable java agent script plugin (javassist) behavior as a setting. (In response to javassist memory issues in certain environments)</li>
+        <li>[agent.java] Added option to exclude stuck services from metering when handling force end in xlog that have not been terminated. (profile_force_end_stuck_ignore_metering)</li>
+        <li>[server] Clean up duplicate elements when counters-site.xml is saved where duplicate elements exist.</li>
+        <li>[webapp] Added serveral APIs and improved functionality. (thx. yosong.heo, gaiajeon)</li>
+        <li>[agent.host] Removed sigar from dependencies and replaced with oshi as it is no longer updated for collecting OS metrics.</li>
+        <li>[client] Added client for Apple silicon. (thx. zbum)</li>
     </ul>
 
-    <h3>v2.17.1 Bug fix</h3>
+    <h3>v2.20.0 Bug fix</h3>
     <ul class="nt">
-        <li>[agent.java] webflux support bug fix. (fix unfinished xlog on some jvm environment.</li>
+        <li></li>
     </ul>
     <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
 </div>
